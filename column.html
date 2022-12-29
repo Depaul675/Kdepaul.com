@@ -1,0 +1,106 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  color: black;
+  height: 1150px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  
+}
+</style>
+</head>
+<body>
+
+<h1>WHO AM I?</h1>
+
+<div class="row">
+  <div class="column" style="background-color:#aaa;">
+   
+   <form action="/action_page.php">
+  <fieldset>    <legend><h2>PERSONAL PROFILE:</h2></legend>
+  
+   <img src="Depaul.jpg"><br><br>
+ 
+    First name:
+   <input type="text" name="firstname" value=""><br><br>
+    Last name:
+   <input type="text" name="lastname" value=""><br><br>
+    Gender:
+   <br><input type="radio" name="gender" value="male" checked> Male<br>
+   <input type="radio" name="gender" value="female" checked>Female<br><br>
+    School attended:
+   <input type="text" name="School attended" value=""><br><br>
+    Year Level:
+    <input type="text" name="year Level" value=""><br><br>
+	Minor:
+    <br><input type="radio" name="Minor" value="male" checked> English<br>
+    <input type="radio" name="Minor" value="female" checked>Mathematics<br>
+	<input type="radio" name="Minor" value="female" checked>Religion<br><br>
+	<input type="submit" value="Submit Form"
+	
+    <input type="radio" name="Place of Origin" value=""><br><br>
+	
+	
+  </fieldset>
+</form>
+  </div>
+  <div class="column" style="background-color:#bbb;">
+    
+  
+   <form action="/action_page.php">
+  <fieldset>    <legend><h2>CULTURAL BACKGROUND:</h2></legend>
+  
+   <img src="culture.jpeg"><br><br>
+    
+  
+    Home Province:
+   <input type="text" name="Home Province" value=""><br><br>
+    District:
+   <input type="text" name="Districk" value=""><br><br>
+    LLG:
+   <input type="text" name="LLG" value=""><br><br>
+    Native Language:
+   <input type="text" name="Native Language" value=""><br><br>
+    <b>Please tick the boxes if you have the following</b>
+	<p></p>
+	National Identification Card:
+	<input type="checkbox" name="check box" value=""><br><br>
+    Birth Certificate:
+	<input type="checkbox" name="check box" value=""><br><br>
+	Driver's Licence:
+	<input type="checkbox" name="check box" value=""><br><br>
+	Passport:
+	<input type="checkbox" name="check box" value=""><br><br>
+	
+   
+   
+	
+	
+  
+	
+  </fieldset>
+</form>
+    
+  </div>
+</div>
+
+</body>
+</html>
